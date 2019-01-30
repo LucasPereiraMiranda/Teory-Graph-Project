@@ -4,23 +4,23 @@
  * 
  *	file dimacs format
  * 	
- * 	number_of_vertices number_of_edges 
- * 	vertice_souce1 vertice_target1 edge_weight1
- *  vertice_souce2 vertice_target2 edge_weight2
- *  vertice_souce3 vertice_target3 edge_weight3
- *  vertice_souce4 vertice_target4 edge_weight4
- *  vertice_souce5 vertice_target5 edge_weight5
- *  ...
+ * number_of_vertices number_of_edges 
+ * vertice_souce1 vertice_target1 edge_weight1
+ * vertice_souce2 vertice_target2 edge_weight2
+ * vertice_souce3 vertice_target3 edge_weight3
+ * vertice_souce4 vertice_target4 edge_weight4
+ * vertice_souce5 vertice_target5 edge_weight5
+ * ...
  *  
- *  ex:
+ * ex:
  *  
- *  5 6
- *	1 2 2
- *	1 4 2
- *  2 3 5
- *	3 4 1
- *	4 5 3
- *	5 1 4
+ *5 6
+ *1 2 2
+ *1 4 2
+ *2 3 5
+ *3 4 1
+ *4 5 3
+ *5 1 4
  */
 
 import br.graph.base_of_graph.*;
@@ -34,15 +34,15 @@ public class Controller {
 	public static void main(String args[]) {
 		
 		try {	
-			/*------------------------------------------------------------------------------------------------------------*/
-														/*data file in the dimacs format*/
+			/*----------------------------------------------------------------------------------------*/
+							/*data file in the dimacs format*/
 			
 			
 			String V_FileName = "dimacsFileGraph.txt";
 
 			
-			/*------------------------------------------------------------------------------------------------------------*/
-														/*graph*/
+			/*----------------------------------------------------------------------------------------*/
+							/*graph*/
 			
 			
 			Graph v_Graph = new Graph(true);
@@ -60,32 +60,32 @@ public class Controller {
 
 			System.out.println("Set of Edges in the graph: "+v_Graph.getGroupOfEdge());
 			
-			/*-------------------------------------------------------------------------------------------------------------*/
+			/*----------------------------------------------------------------------------------------*/
 				
-														/*adjacency list representation*/
+							/*adjacency list representation*/
 				
 			AdjacencyListRepresentation v_AdjacencyList = new AdjacencyListRepresentation(v_Graph);
 			
 			v_AdjacencyList.printRepresentation();
 			
 
-			/*-------------------------------------------------------------------------------------------------------------*/
-														/*adjacency matrix representation*/
+			/*----------------------------------------------------------------------------------------*/
+							/*adjacency matrix representation*/
 			
 			AdjacencyMatrixRepresentation v_AdjacencyMatrix = new AdjacencyMatrixRepresentation(v_Graph);
 			
 			v_AdjacencyMatrix.printRepresentation();
 			
 			
-			/*-------------------------------------------------------------------------------------------------------------*/
-														/*incidency matrix representation*/
+			/*----------------------------------------------------------------------------------------*/
+							/*incidency matrix representation*/
 			
 			IncidencyMatrixRepresentation v_IncidencyMatrix = new IncidencyMatrixRepresentation(v_Graph);
 			
 			v_IncidencyMatrix.printRepresentation();
 			
-			/*-------------------------------------------------------------------------------------------------------------*/
-														/*depth search*/
+			/*----------------------------------------------------------------------------------------*/
+							/*depth search*/
 			
 			Vertice v_ChosenVertice = new Vertice(1);
 			
@@ -95,8 +95,8 @@ public class Controller {
 			
 			v_ObjectDeepSearch.print();
 			
-			/*-------------------------------------------------------------------------------------------------------------*/
-														/*breadth search*/
+			/*----------------------------------------------------------------------------------------*/
+							/*breadth search*/
 			
 			BreadthFirstSearch v_Bfs = new BreadthFirstSearch(v_Graph);
 			
@@ -105,31 +105,31 @@ public class Controller {
 			v_Bfs.print();
 			
 			
-			/*-------------------------------------------------------------------------------------------------------------*/
-														/*this graph is completed?*/
+			/*----------------------------------------------------------------------------------------*/
+							/*this graph is completed?*/
 			
 			System.out.println("\nActualy this graph is completed? "+v_Graph.isCompleted(v_Graph));
 			
 			
-			/*-------------------------------------------------------------------------------------------------------------*/
-														/*this graph is eulerian?*/
+			/*----------------------------------------------------------------------------------------*/
+							/*this graph is eulerian?*/
 
 			System.out.println("\nThis graph is eulerian? "+ v_Graph.isEulerian(v_Graph));
 
 
-			/*-------------------------------------------------------------------------------------------------------------*/
-														/*this graph is connected?*/
+			/*----------------------------------------------------------------------------------------*/
+							/*this graph is connected?*/
 
 			System.out.println("\nThis graph is connected? "+ v_Graph.isConnected(v_Graph));
 
-			/*-------------------------------------------------------------------------------------------------------------*/
-														/*number of components connecteds in this graph?*/
+			/*----------------------------------------------------------------------------------------*/
+							/*number of components connecteds in this graph?*/
 
 			System.out.println("\nThe number of components connecteds in this graph is: "+ v_Graph.getNumberComponentsConnected(v_Graph));
 			
 			
-			/*-------------------------------------------------------------------------------------------------------------*/	
-														/*completing this graph*/
+			/*----------------------------------------------------------------------------------------*/
+							/*completing this graph*/
 			
 			/*v_Graph = v_Graph.completingGraph(v_Graph);
 			System.out.println("\nActualy this graph is completed? "+v_Graph.isCompleted(v_Graph));
@@ -142,14 +142,14 @@ public class Controller {
 			v_AdjacencyMatrix2.printRepresentation();
 			*/
 			
-			/*-------------------------------------------------------------------------------------------------------------*/
-														/*DIJKSTRA*/
+			/*----------------------------------------------------------------------------------------*/
+							/*DIJKSTRA*/
 			
 			/*Implement minimun path(dijkstra)*/
 			
 			
-			/*-------------------------------------------------------------------------------------------------------------*/
-														/*FLEURY*/
+			/*----------------------------------------------------------------------------------------*/
+							/*FLEURY*/
 	
 			/*Implement eulerian circuit(fleury)*/
 			
