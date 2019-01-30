@@ -5,11 +5,11 @@
  *	file dimacs format
  * 	
  * number_of_vertices number_of_edges 
- * vertice_souce1 vertice_target1 edge_weight1
- * vertice_souce2 vertice_target2 edge_weight2
- * vertice_souce3 vertice_target3 edge_weight3
- * vertice_souce4 vertice_target4 edge_weight4
- * vertice_souce5 vertice_target5 edge_weight5
+ * vertice_source1 vertice_target1 edge_weight1
+ * vertice_source2 vertice_target2 edge_weight2
+ * vertice_source3 vertice_target3 edge_weight3
+ * vertice_source4 vertice_target4 edge_weight4
+ * vertice_source5 vertice_target5 edge_weight5
  * ...
  *  
  * ex:
