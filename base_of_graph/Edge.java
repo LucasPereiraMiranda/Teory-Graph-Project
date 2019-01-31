@@ -47,7 +47,8 @@ public class Edge implements Comparable<Edge>{
 		return "("+m_VerticeSource.getID()+","+m_VerticeTarget.getID()+")";
 	}
 	
-	/*Foi necessário reescrever os métodos abaixo para que o HashSet diferenciasse o pelo campo, e não pelo endereço do objeto*/
+	/*It was necessary to rewrite the methods below
+	so that HashSet would differ by the field, not by the address of the object*/
 	@Override
 	public boolean equals(Object p_Obj){
         if (p_Obj instanceof Edge) {
